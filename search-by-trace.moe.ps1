@@ -1,10 +1,12 @@
 #Requires -Version 5.1
 
 <#PSScriptInfo
-.VERSION 0.2.0
+.VERSION 0.3.0
 .GUID 7db8f935-8341-4687-8e7e-7da12448b297
 .AUTHOR soruly@gmail.com
 .DESCRIPTION search anime screenshot by trace.moe
+.TAGS anime image-search
+.ICONURI https://trace.moe/favicon128.png
 .PROJECTURI https://github.com/soruly/trace.moe-windows-menu
 .LICENSEURI https://github.com/soruly/trace.moe-windows-menu/blob/master/LICENSE
 #>
@@ -105,7 +107,7 @@ $form.Add_ContentRendered({
     Invoke-WebRequest -URI $imageUri -OutFile $tempImage
     $image.Source = $tempImage
 
-    $videoUri = New-Object System.Uri ($topResult.video + "&size=l")
+    $videoUri = New-Object System.Uri ($topResult.video + "&size=l&mute")
     Invoke-WebRequest -URI $videoUri -OutFile $tempVideo
     $video.Source = $tempVideo
     $video.Play()
