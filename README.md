@@ -5,13 +5,18 @@ Right click images in file explorer to search on trace.moe
 
 ## Install
 Open Windows Terminal (powershell) with administrator privileges
-```
+```powershell
 Install-Script -Confirm -Name search-by-trace.moe
 search-by-trace.moe.ps1 -install
 ```
 
-## Uninstall
+## Update
+```powershell
+Update-Script search-by-trace.moe
 ```
+
+## Uninstall
+```powershell
 search-by-trace.moe.ps1 -uninstall
 Uninstall-Script search-by-trace.moe
 ```
