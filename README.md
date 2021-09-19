@@ -1,4 +1,8 @@
 # trace.moe-windows-menu
+
+[![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/search-by-trace.moe?style=flat-square)](https://www.powershellgallery.com/packages/search-by-trace.moe/)
+[![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/search-by-trace.moe?style=flat-square)](https://www.powershellgallery.com/packages/search-by-trace.moe/)
+
 Right click images in file explorer to search on trace.moe
 
 ![](https://images.plurk.com/4mtGacxqdp1VO3dwcHmwgF.png )
