@@ -1,12 +1,12 @@
 #Requires -Version 5.1
 
 <#PSScriptInfo
-.VERSION 0.1
+.VERSION 0.2.0
 .GUID 7db8f935-8341-4687-8e7e-7da12448b297
 .AUTHOR soruly@gmail.com
 .DESCRIPTION search anime screenshot by trace.moe
-.PROJECTURI https://github.com/soruly/trace.moe
-.LICENSEURI https://raw.githubusercontent.com/soruly/trace.moe/master/LICENSE
+.PROJECTURI https://github.com/soruly/trace.moe-windows-menu
+.LICENSEURI https://github.com/soruly/trace.moe-windows-menu/blob/master/LICENSE
 #>
 
 param (
