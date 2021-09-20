@@ -9,9 +9,10 @@ Right click images in file explorer to search on trace.moe
 ![](https://images.plurk.com/4MCbCqXAw0G4rGmYsepIqc.png)
 
 ## Install
-Open Windows Terminal (powershell) with administrator privileges
+Open Windows Terminal (powershell) with administrator privileges (You'll have to enter "Y" multiple times)
 ```powershell
-Install-Script -Confirm -Name search-by-trace.moe
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+Install-Script -Name search-by-trace.moe
 search-by-trace.moe.ps1 -install
 ```
 
