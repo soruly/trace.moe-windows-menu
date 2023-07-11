@@ -1,7 +1,7 @@
 #Requires -Version 5.1
 
 <#PSScriptInfo
-.VERSION 0.3.0
+.VERSION 0.4.0
 .GUID 7db8f935-8341-4687-8e7e-7da12448b297
 .AUTHOR soruly@gmail.com
 .DESCRIPTION search anime screenshot by trace.moe
@@ -91,7 +91,7 @@ Remove-Item -Path $tempVideo
 $image.Source = "$path"
 
 $form.Add_ContentRendered({
-    $response = Invoke-RestMethod -InFile "$tempSource" -Method Post "https://api.trace.moe/search?anilistInfo"
+    $response = Invoke-RestMethod -InFile "$tempSource" -Method Post "https://api.trace.moe/search?cutBorders&anilistInfo"
     Remove-Item -Path $tempSource
     $result = $response.result
     $topResult = $result[0]
