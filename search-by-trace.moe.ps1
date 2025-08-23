@@ -1,7 +1,7 @@
 #Requires -Version 5.1
 
 <#PSScriptInfo
-.VERSION 0.4.0
+.VERSION 0.5.0
 .GUID 7db8f935-8341-4687-8e7e-7da12448b297
 .AUTHOR soruly@gmail.com
 .DESCRIPTION search anime screenshot by trace.moe
@@ -103,11 +103,11 @@ $form.Add_ContentRendered({
     $similarity.Content = ($topResult.similarity).toString("P")
     $reference.Content = $topResult.filename
 
-    $imageUri = New-Object System.Uri ($topResult.image + "&size=l")
+    $imageUri = New-Object System.Uri ($topResult.image + "?size=l")
     Invoke-WebRequest -URI $imageUri -OutFile $tempImage
     $image.Source = $tempImage
 
-    $videoUri = New-Object System.Uri ($topResult.video + "&size=l&mute")
+    $videoUri = New-Object System.Uri ($topResult.video + "?size=l&mute")
     Invoke-WebRequest -URI $videoUri -OutFile $tempVideo
     $video.Source = $tempVideo
     $video.Play()
